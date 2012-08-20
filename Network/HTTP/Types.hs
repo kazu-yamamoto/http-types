@@ -106,6 +106,8 @@ module Network.HTTP.Types
 , gatewayTimeout504
 , status505
 , httpVersionNotSupported505
+  -- ** toByteString
+, statusCodeToByteString
   -- * Headers
   -- ** Types
 , Header
@@ -185,6 +187,7 @@ where
 import           Network.HTTP.Types.Method
 import           Network.HTTP.Types.Version
 import           Network.HTTP.Types.Status
+import           Network.HTTP.Types.StatusArray
 import           Network.HTTP.Types.Header
 import           Network.HTTP.Types.URI
 import           Network.HTTP.Types.QueryLike

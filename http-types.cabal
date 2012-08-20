@@ -52,6 +52,7 @@ Library
                        Network.HTTP.Types.Method
                        Network.HTTP.Types.QueryLike
                        Network.HTTP.Types.Status
+                       Network.HTTP.Types.StatusArray
                        Network.HTTP.Types.URI
                        Network.HTTP.Types.Version
 
