@@ -10,7 +10,7 @@ import Text.Printf
 -- | Converting numeric status code to 'ByteString' in O(1).
 statusCodeToByteString :: Int -> ByteString
 statusCodeToByteString sc
-  | sc < statusMin || sc > statusMax = B8.pack $ printf "%03d" $ abs sc
+  | sc < statusMin || sc > statusMax = B8.pack $ printf "%03d" (abs sc `mod` 1000)
 statusCodeToByteString sc = statusArray ! sc
 
 statusMin :: Int
