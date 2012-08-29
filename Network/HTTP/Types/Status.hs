@@ -106,9 +106,9 @@ import           Data.ByteString.Char8 as B8
 -- Note that the Show instance is only for debugging.
 data Status
     = Status {
-        statusCode :: Int
-      , statusAsciiCode :: B.ByteString
-      , statusMessage :: B.ByteString
+        statusCode      :: {-# UNPACK #-} !Int
+      , statusAsciiCode :: {-# UNPACK #-} !B.ByteString
+      , statusMessage   :: {-# UNPACK #-} !B.ByteString
       }
     deriving (Show)
 
